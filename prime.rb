@@ -1,5 +1,8 @@
 # my way
+# technically 1 isn't prime: http://en.wikipedia.org/wiki/Prime_number
+
 def prime?(number)
+  (0..number).each do |number|
   prime_num = 0
   a =[]
   (2..(number-1)).each do |y|
@@ -10,9 +13,9 @@ def prime?(number)
       prime_num = true
     end
   end
-  puts prime_num
+  puts number if prime_num == true || number == 2
 end
-
+end
 
 
 # their way
